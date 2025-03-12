@@ -20,4 +20,9 @@ urlpatterns = [
     path('', views.register, name='register'),
     path('login/', views.login_view, name='login'),
 
+#mpesa api
+    path('pay/', views.pay, name='pay'),
+    path('stk/', views.stk, name='stk'),
+    path('token/', views.token, name='token'),
+    path('transactions/', views.transactions_list, name='transactions'),
 ]
